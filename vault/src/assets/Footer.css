@@ -1,0 +1,232 @@
+.footer {
+    background-color: #1e293b;
+    color: white;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* Footer Top Section */
+  .footer-top {
+    padding: 4rem 0;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .footer-title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .company-description {
+    color: #94a3b8;
+    line-height: 1.6;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white;
+    transition: all 0.2s;
+  }
+  
+  .social-link:hover {
+    background: #2563eb;
+    transform: translateY(-2px);
+  }
+  
+  .footer-subtitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  /* Footer Links */
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .footer-links li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .footer-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .footer-links a:hover {
+    color: white;
+  }
+  
+  .footer-links svg {
+    color: #2563eb;
+  }
+  
+  /* Contact Info */
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .contact-info li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  
+  .contact-info svg {
+    color: #2563eb;
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+  }
+  
+  .contact-info a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .contact-info a:hover {
+    color: white;
+  }
+  
+  /* Trust Badges */
+  .trust-badges {
+    background: #0f172a;
+    padding: 2rem 0;
+  }
+  
+  .badges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .badge {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .badge svg {
+    color: #2563eb;
+  }
+  
+  .badge h5 {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  
+  .badge p {
+    color: #94a3b8;
+    font-size: 0.875rem;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    background: #0f172a;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem 0;
+  }
+  
+  .footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #94a3b8;
+  }
+  
+  .footer-bottom-links {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .footer-bottom-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .footer-bottom-links a:hover {
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-top {
+      padding: 3rem 0;
+    }
+  
+    .footer-grid {
+      gap: 2rem;
+    }
+  
+    .badges-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  
+    .footer-bottom-content {
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+    }
+  
+    .footer-bottom-links {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-section {
+      text-align: center;
+    }
+  
+    .social-links {
+      justify-content: center;
+    }
+  
+    .footer-links li,
+    .contact-info li {
+      justify-content: center;
+    }
+  
+    .badge {
+      flex-direction: column;
+      text-align: center;
+    }
+  }

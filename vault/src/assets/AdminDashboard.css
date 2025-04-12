@@ -1,0 +1,200 @@
+/* Dashboard styles */
+.dashboard {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+
+.dashboard-header {
+  margin-bottom: 2rem;
+}
+
+.dashboard-header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-header p {
+  color: #666;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.stat-icon {
+  color: #2563eb;
+  width: 24px;
+  height: 24px;
+}
+
+.stat-change {
+  color: #22c55e;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.stat-label {
+  color: #666;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.card-icon {
+  color: #2563eb;
+  width: 20px;
+  height: 20px;
+}
+
+/* Table styles */
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  padding: 0.75rem 0;
+  color: #666;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-bottom: 2px solid #eee;
+}
+
+td {
+  padding: 0.75rem 0;
+  border-top: 1px solid #eee;
+}
+
+.status-badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.status-confirmed {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.status-pending {
+  background-color: #fef9c3;
+  color: #854d0e;
+}
+
+.status-completed {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+/* Vehicle list styles */
+.vehicle-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-top: 1px solid #eee;
+}
+
+.vehicle-info h3 {
+  font-weight: 500;
+  color: #1a1a1a;
+  margin-bottom: 0.25rem;
+}
+
+.vehicle-info p {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.vehicle-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.rating-star {
+  color: #facc15;
+  width: 16px;
+  height: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 1rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card {
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+}

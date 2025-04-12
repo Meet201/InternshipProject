@@ -1,0 +1,129 @@
+.favorites-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.favorites-header {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.favorites-header .icon {
+    margin-right: 0.5rem;
+    color: #ef4444;
+}
+
+.favorites-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.favorites-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease;
+}
+
+.favorites-card:hover {
+    transform: translateY(-4px);
+}
+
+.favorites-image {
+    position: relative;
+    height: 200px;
+}
+
+.favorites-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.favorites-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.favorites-btn:hover {
+    transform: scale(1.1);
+}
+
+.favorites-btn.active {
+    color: #ef4444;
+}
+
+.favorites-info {
+    padding: 1.5rem;
+}
+
+.favorites-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2563eb;
+    margin-bottom: 1rem;
+}
+
+.favorites-specs {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    color: #4b5563;
+    font-size: 0.875rem;
+}
+
+.favorites-specs .icon {
+    margin-right: 0.5rem;
+}
+
+.favorites-empty {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: #6b7280;
+}
+
+.favorites-empty svg {
+    margin-bottom: 1rem;
+}
+
+.favorites-empty h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 640px) {
+    .favorites-container {
+        padding: 1rem;
+    }
+
+    .favorites-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .favorites-header {
+        font-size: 1.8rem;
+    }
+}

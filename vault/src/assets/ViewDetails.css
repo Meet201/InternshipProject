@@ -1,0 +1,380 @@
+/* Modal Overlay */
+.view-details-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.view-details-modal {
+  background: white;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 1000px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+/* Car Gallery */
+.car-gallery {
+  padding: 1rem;
+}
+
+.main-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.thumbnail-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.thumbnail-grid img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.thumbnail-grid img:hover {
+  opacity: 0.8;
+}
+
+/* Car Details Content */
+.car-details-content {
+  padding: 2rem;
+}
+
+.car-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.car-header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.rating .filled {
+  color: #fbbf24;
+}
+
+.rating span {
+  color: #64748b;
+  margin-left: 0.5rem;
+}
+
+/* Price Section */
+.price-section {
+  text-align: right;
+}
+
+.price-tag {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+}
+
+.price-details p {
+  color: #64748b;
+  margin-bottom: 0.5rem;
+}
+
+.emi-button {
+  background: #f1f5f9;
+  color: #2563eb;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.emi-button:hover {
+  background: #e2e8f0;
+}
+
+/* Specifications */
+.specifications {
+  margin-bottom: 2rem;
+}
+
+.specifications h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.specs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.spec-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 0.5rem;
+}
+
+.spec-item svg {
+  color: #2563eb;
+}
+
+.spec-item h4 {
+  font-weight: 500;
+  color: #64748b;
+  margin-bottom: 0.25rem;
+}
+
+.spec-item p {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+/* Ratings Section */
+.ratings-section {
+  margin-bottom: 2rem;
+}
+
+.ratings-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.rating-bar {
+  display: grid;
+  grid-template-columns: 100px 1fr 50px;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rating-label {
+  color: #64748b;
+}
+
+.rating-progress {
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.rating-fill {
+  height: 100%;
+  background: #2563eb;
+  border-radius: 4px;
+}
+
+.rating-value {
+  color: #1e293b;
+  font-weight: 600;
+}
+
+/* Review Sections */
+.review-sections {
+  margin-bottom: 2rem;
+}
+
+.review-section {
+  margin-bottom: 1.5rem;
+}
+
+.review-section h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.review-section p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.review-editor {
+  width: 100%;
+  min-height: 100px;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+/* Admin Controls */
+.admin-edit-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #f8fafc;
+  color: #2563eb;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.admin-edit-button:hover {
+  background: #f1f5f9;
+  border-color: #2563eb;
+}
+
+.save-review-button {
+  background: #2563eb;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.save-review-button:hover {
+  background: #1d4ed8;
+}
+
+/* Latest Updates */
+.latest-updates {
+  margin-bottom: 2rem;
+}
+
+.updates-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.update-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 0.5rem;
+}
+
+.update-item svg {
+  color: #2563eb;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.schedule-test,
+.contact-dealer {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.schedule-test {
+  background: #2563eb;
+  color: white;
+  border: none;
+}
+
+.schedule-test:hover {
+  background: #1d4ed8;
+}
+
+.contact-dealer {
+  background: white;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+}
+
+.contact-dealer:hover {
+  background: #f8fafc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .view-details-modal {
+    margin: 0;
+    border-radius: 0;
+    height: 100vh;
+    max-height: none;
+  }
+
+  .main-image {
+    height: 250px;
+  }
+
+  .thumbnail-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .car-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .price-section {
+    text-align: left;
+  }
+
+  .specs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+}

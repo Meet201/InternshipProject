@@ -1,0 +1,13 @@
+admin login Password
+Email: admin@vehiclevault.com
+Password: admin123
+
+logo color
+• Burnt Orange: #CC5500
+• Mustard Yellow: #FFDB58
+• #008080
+
+
+login user:
+Email:shrenibenpatel22@gnu.ac.in
+Password:123456

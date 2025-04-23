@@ -1,0 +1,185 @@
+.compare-container {
+    font-family: 'Manrope', sans-serif;
+    background-color: #f8f9fa; /* Light background for the entire compare section */
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.compare-header {
+    background: linear-gradient(99.47deg, #9CA6AF 6.24%, rgba(156, 166, 175, 0.64) 64.75%);
+    height: 300px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.compare-heading {
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.05em;
+}
+
+.compare-description {
+    font-size: 18px;
+    color: #ffffff;
+    max-width: 600px;
+    margin-top: 10px;
+}
+
+.compare-searchbox {
+    position: relative;
+    top: -75px;
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.compare-form-label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.compare-form-control {
+    height: 45px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 0 12px;
+    width: 100%;
+}
+
+.compare-section {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.compare-comparebox {
+    position: relative;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.compare-comparebox:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.compare-comparebutton {
+    display: block;
+    margin: 10px auto;
+    padding: 12px 30px;
+    background-color: #0077c8; /* Primary button color */
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.compare-comparebutton:hover {
+    background-color: #005f9e; /* Darker shade on hover */
+}
+
+.compare-removebutton {
+    display: block;
+    margin: 10px auto;
+    padding: 12px 30px;
+    background-color: #dc3545; /* Red for remove button */
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.compare-removebutton:hover {
+    background-color: #b02a37; /* Darker red on hover */
+}
+
+.compare-container select option {
+    padding: 8px 12px;
+    font-size: 16px;
+}
+
+.compare-container select option:hover {
+    background-color: #f0f0f0;
+}
+
+.compare-container select option:checked {
+    background-color: #0077c8;
+    color: #fff;
+}
+
+.compare-chart-container {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.compare-specs h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.compare-specs p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.compare-specs hr {
+    border: 0;
+    border-top: 1px solid #e0e0e0;
+    margin: 15px 0;
+}
+
+/* Ensure no conflict with navbar */
+.compare-container .navbar {
+    isolation: isolate; /* Prevent style bleeding */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .compare-heading {
+        font-size: 32px;
+    }
+
+    .compare-description {
+        font-size: 16px;
+    }
+
+    .compare-searchbox {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .compare-form-control {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .compare-comparebox {
+        padding: 15px;
+    }
+}

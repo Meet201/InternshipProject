@@ -13,7 +13,7 @@ const Home = () => {
             <p>Explore thousands of cars, compare prices, and make informed decisions with Vehicle Vault</p>
             
             {/* Search Bar */}
-              <div className="search-bar">
+              {/* <div className="search-bar">
                 <select className="search-select">
                   <option value="">All Brands</option>
                   <option>Toyota</option>
@@ -35,7 +35,7 @@ const Home = () => {
                   <Search size={24} />
                   Search
                 </button>
-              </div>
+              </div> */}
           </div>
         </div>
       </div>

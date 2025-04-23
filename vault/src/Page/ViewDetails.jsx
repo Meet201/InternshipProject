@@ -1,23 +1,29 @@
 import React from 'react';
 import { X, Car, Fuel, Settings, Calendar } from 'lucide-react';
+import '../assets/ViewDetails.css'; 
 
 const ViewDetails = ({ car, onClose }) => {
   return (
-    <div className="modal-overlay">
-      <div className="modal-content">
+    <div className="view-details-overlay">
+      <div className="view-details-modal">
         <button className="close-button" onClick={onClose}>
           <X size={24} />
         </button>
 
-        <div className="modal-body">
-          <div className="modal-image">
-            <img src={car.image} alt={car.name} />
+        <div className="car-details-content">
+          <div className="car-gallery">
+            <img src={car.image} alt={car.name} className="main-image" />
           </div>
 
-          <div className="modal-details">
+          <div className="car-header">
             <h2>{car.name}</h2>
-            <div className="price-tag">${car.price}</div>
+            <div className="price-section">
+              <div className="price-tag">${car.price}</div>
+            </div>
+          </div>
 
+          <div className="specifications">
+            <h3>Specifications</h3>
             <div className="specs-grid">
               <div className="spec-item">
                 <Car size={20} />
@@ -48,22 +54,22 @@ const ViewDetails = ({ car, onClose }) => {
                 </div>
               </div>
             </div>
+          </div>
 
-            <div className="additional-info">
-              <h3>Additional Information</h3>
-              <ul>
-                <li>
-                  <strong>Transmission:</strong> {car.transmission}
-                </li>
-                <li>
-                  <strong>Mileage:</strong> {car.mileage}
-                </li>
-              </ul>
-            </div>
+          <div className="additional-info">
+            <h3>Additional Information</h3>
+            <ul>
+              <li>
+                <strong>Transmission:</strong> {car.transmission}
+              </li>
+              <li>
+                <strong>Mileage:</strong> {car.mileage}
+              </li>
+            </ul>
+          </div>
 
-            <button className="contact-button">
-              Contact Dealer
-            </button>
+          <div className="action-buttons">
+            <button className="contact-dealer">Contact Dealer</button>
           </div>
         </div>
       </div>

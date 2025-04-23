@@ -1,0 +1,84 @@
+.order-history-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.order-history-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.loading, .error {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin: 50px 0;
+}
+
+.error {
+    color: red;
+}
+
+.orders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.order-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.order-header h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.status.succeeded {
+    background: #28a745;
+    color: white;
+}
+
+.status.pending {
+    background: #ffc107;
+    color: #333;
+}
+
+.status.failed {
+    background: #dc3545;
+    color: white;
+}
+
+.order-details p {
+    margin: 8px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.order-details strong {
+    color: #333;
+    margin-right: 5px;
+}

@@ -23,7 +23,7 @@
   cursor: pointer;
   transition: color 0.3s ease;
 }
-.logo:hover{
+.logo:hover {
   color: #008080;
 }
 
@@ -85,6 +85,9 @@
   border-radius: 5px;
   transition: all 0.3s ease;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .login {
@@ -94,7 +97,17 @@
 }
 
 .login:hover {
-  background-color: #e1c9c1;
+  background-color: #ff5722;
   color: white;
+  border-color: #ff5722;
 }
 
+.logout {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+}
+
+.logout:hover {
+  background-color: #e64a19;
+}
